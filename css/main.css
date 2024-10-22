@@ -4,30 +4,29 @@
 
 }
 
-#container2{
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.img1{
-    height: 100px;
-    width: 100px;
-}
-
 /*Index*/
+
+body{
+    font-family: rocketLeague;
+}
+
+@font-face{
+    font-family: rocketLeague;
+    src: url(../assets/fuentes/Bourgeois-Light.otf);
+}
 
 #index__header1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 250px;
+    background-color: cyan;
 }
 
 #index__titulo{
     display: flex;
     flex-direction: row;
-    height: 100px;
+    height: 190px;
     justify-content: center;
     align-items: center;
 }
@@ -37,15 +36,20 @@
 }
 
 #index__titulo h1{
-    font-size: 60px;
+    font-size: 90px;
 }
 
 #index__menu{
-    width: 100%;
-    background-color: black;
+    height: 30px;
     list-style: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+#index__menuFinal{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 #index__menu a{
@@ -54,17 +58,23 @@
     text-align: center;
     color: white;
     text-decoration: none;
+    font-size: 30px;
+    border: solid 3px black;
+    transition: all, .4s;
 }
 
 #index__menu a:hover{
     background-color: aliceblue;
     color: black;
-    margin: 10px;
-    padding: 5px;
-    height: 400px;
-    width: 400px;
+    transform: scale(1.1, 1.1);
 }
-.text{
-    text-align: center;
-    font-size: 30px;
+
+#index__header2 img{
+    width: 250px;
+}
+
+#index__header2{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
 }
