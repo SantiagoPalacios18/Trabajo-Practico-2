@@ -4,16 +4,21 @@
 
 }
 #container2{
+    margin: 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
 
 
 }
 
-#container2 img{
-    text-align: center;
-}
 .img1{
-    height: 100px;
-    width: 100px;
+    margin: 10px;
+    padding: 5px;
+    height: 400px;
+    width: 400px;
+}
+.text{
+    text-align: center;
+    font-size: 30px;
 }
