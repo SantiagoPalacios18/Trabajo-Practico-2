@@ -11,6 +11,7 @@
 
 body{
     font-family: rocketLeague;
+    overflow-x: hidden;
 }
 
 #index__header1{
@@ -56,7 +57,7 @@ body{
     text-align: center;
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     border: solid 3px black;
     transition: all, .4s;
 }
@@ -80,13 +81,19 @@ body{
 #index__animacion{
     background-color: gray;
     margin-top: 45px;
+    margin-bottom: 45px;
     padding: 30px 0px 30px 0px;
+    overflow: hidden;
 }
 
-#index__animacion img{
+#index__objAnimado{
     width: 20%;
     display: flex;
     animation: desplazar, 2s, infinite;
+}
+
+#index__objAnimado img{
+    width: 100%;
 }
 
 @keyframes desplazar{
@@ -96,3 +103,26 @@ body{
         transform: translate(1600px);
     }
 }
+
+#index__inicio{
+    display: flex;
+    flex-direction: row;
+}
+
+#index__inicio div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#index__inicio p{
+    font-size: 25px;
+    padding: 80px;
+}
+
+#index__inicio img{
+    border-radius: 20px;
+    width: 95%;
+}
+
