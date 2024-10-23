@@ -6,6 +6,13 @@
 body {
     overflow-x: hidden;
 }
+header h1 {
+    font-size: 3rem;
+    color: #333; /* Cambia el color del texto si lo deseas */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si lo prefieres */
+}
 
 #titulo{
     margin-left: 30px;
@@ -21,7 +28,14 @@ body {
     transition: transform 0.5s ease-in-out;
 }
 
-
+#conjuntoImagenes div div p{
+    position: absolute;
+    display: none;
+    font-size: 30px;
+    color: #CCF6FF;
+    width: 25%;
+    text-align: center;
+}
 .img1 {
     height: 500px;
     width: 500px;
