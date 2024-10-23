@@ -1,18 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 
 /*Index*/
+@font-face{
+    font-family: 'rocketLeague';
+    src: url(../assets/fuentes/Bourgeois-Light.ttf);
+}
 
 body{
     font-family: rocketLeague;
-}
-
-@font-face{
-    font-family: rocketLeague;
-    src: url(../assets/fuentes/Bourgeois-Light.otf);
+    overflow-x: hidden;
+    background-color: #F2F2F2;
 }
 
 #index__header1{
@@ -58,7 +58,7 @@ body{
     text-align: center;
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     border: solid 3px black;
     transition: all, .4s;
 }
@@ -77,4 +77,123 @@ body{
     background-color: blueviolet;
     display: flex;
     justify-content: center;
+}
+
+#index__animacion{
+    background-color: gray;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 30px 0px 30px 0px;
+    overflow: hidden;
+}
+
+#index__objAnimado{
+    width: 20%;
+    display: flex;
+    animation: desplazar, 2s, infinite;
+}
+
+#index__objAnimado img{
+    width: 100%;
+}
+
+@keyframes desplazar{
+    from{
+        transform: translate(-400px);
+    }to{
+        transform: translate(1600px);
+    }
+}
+
+#index__inicio{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+}
+
+#index__inicio div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#index__inicio h2{
+    padding-left: 40px;
+}
+
+#index__inicio p{
+    font-size: 25px;
+    padding: 80px;
+    padding-top: 0px;
+}
+
+#index__inicio img{
+    border-radius: 20px;
+    width: 95%;
+}
+
+#index__subtitulo{
+    margin-left: 20px;
+}
+
+#index__imgCont img{
+    width: 100%;
+    border: solid 4px black;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    filter: brightness(60%);
+}
+
+.items{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.items h4{
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    margin-left: 20%;
+    background-color: blue;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.items div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.items img{
+    width: 5%;
+    height: 80px;
+    transition: all .2s;
+}
+
+.items p{
+    width: 40%;
+    background-color: black;
+    color: black;
+    height: 100%;
+    transition: all .2s;
+    text-align: center;
+    font-size: 20px;
+    border: solid 2px black;
+    border-radius: 15px;
+}
+
+.items img:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.items img:hover ~ p{
+    background-color: beige;
+    transform: scale(1.1, 1.1);
 }
