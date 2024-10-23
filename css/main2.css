@@ -26,3 +26,11 @@
     background-color: brown;
 
 }
+
+#container3 img{
+    margin: 60px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
