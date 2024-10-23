@@ -12,7 +12,7 @@
 body{
     font-family: rocketLeague;
     overflow-x: hidden;
-    background-color: #F2F2F2;
+    background-color: #035AA6;
 }
 
 #index__header1{
@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     justify-content: center;
     height: 250px;
-    background-color: cyan;
+    background-color: #F2F2F2;
 }
 
 #index__titulo{
@@ -54,12 +54,12 @@ body{
 
 #index__menu a{
     width: 20%;
-    background-color: blue;
+    background-color: #0D0D0D;
     text-align: center;
     color: white;
     text-decoration: none;
     font-size: 25px;
-    border: solid 3px black;
+    border: solid 3px #0D0D0D;
     transition: all, .4s;
 }
 
@@ -74,23 +74,27 @@ body{
 }
 
 #index__header2{
-    background-color: blueviolet;
+    background-color: #049DD9;
     display: flex;
     justify-content: center;
+    border: solid 3px #0D0D0D;
 }
 
 #index__animacion{
-    background-color: gray;
+    background-color: #035AA6;
     margin-top: 45px;
     margin-bottom: 45px;
     padding: 30px 0px 30px 0px;
     overflow: hidden;
+    border: solid 3px #0D0D0D;
+    border-left: none;
+    border-right: none;
 }
 
 #index__objAnimado{
     width: 20%;
     display: flex;
-    animation: desplazar, 2s, infinite;
+    animation: desplazar 1s infinite;
 }
 
 #index__objAnimado img{
@@ -109,6 +113,9 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 45px;
+    background-color: #035AA6;
+    border-top: solid 3px #0D0D0D;
+    border-bottom: solid 3px #0D0D0D;
 }
 
 #index__inicio div{
@@ -139,7 +146,7 @@ body{
 
 #index__imgCont img{
     width: 100%;
-    border: solid 4px black;
+    border: solid 4px #0D0D0D;
     border-left: none;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -159,7 +166,7 @@ body{
     padding: 10px;
     text-align: left;
     margin-left: 20%;
-    background-color: blue;
+    background-color: #049DD9;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -179,13 +186,13 @@ body{
 
 .items p{
     width: 40%;
-    background-color: black;
-    color: black;
+    background-color: #0D0D0D;
+    color: #0D0D0D;
     height: 100%;
     transition: all .2s;
     text-align: center;
     font-size: 20px;
-    border: solid 2px black;
+    border: solid 2px #0D0D0D;
     border-radius: 15px;
 }
 
@@ -194,14 +201,14 @@ body{
 }
 
 .items img:hover ~ p{
-    background-color: beige;
+    background-color: #F2F2F2;
     transform: scale(1.1, 1.1);
 }
 
 footer{
     background-color: #021F59;
     margin-top: 20px;
-    border-top: solid 5px black;
+    border-top: solid 5px #0D0D0D;
 }
 
 #redes{
@@ -210,14 +217,16 @@ footer{
     row-gap: 10px;
     padding-left: 25px;
     margin-top: 10px;
-    border: solid 3px black;
+    border: solid 3px #0D0D0D;
     border-left: none;
     border-radius: 20px;
+    background-color: #035AA6;
+    padding-bottom: 20px;
 }
 
 #redes p{
     font-size: 30px;
-    color: white;
+    color: #F2F2F2;
 }
 
 #redes a{
@@ -227,6 +236,7 @@ footer{
 
 #redes a:hover{
     filter: invert(100%);
+    transform: scale(1.1, 1.1);
 }
 
 #menuFooter{
@@ -243,13 +253,13 @@ footer{
 }
 
 #menuFooter a:hover{
-    color: white;
+    color: #F2F2F2;
     text-decoration: underline;
 }
 
 .iconos{
     width: 60px;
-    background-color: white;
+    background-color: #F2F2F2;
     border-radius: 10px;
 }
 
@@ -261,7 +271,7 @@ footer{
 
 #copyright p{
     text-align: center;
-    color: white;
+    color: #F2F2F2;
 }
 
 

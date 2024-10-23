@@ -14,6 +14,10 @@ header h1 {
     font-family: 'Arial', sans-serif; /* Cambia la fuente si lo prefieres */
 }
 
+#titulo{
+    margin-left: 30px;
+}
+
 #container2 img, #container3 img {
     margin: 60px;
     padding: 50px;
@@ -62,7 +66,6 @@ header h1 {
     transform: translateY(0); /* Se coloca en su posición original */
 }
 
-/* Animación de rebote al cargar las imágenes */
 @keyframes bounceIn {
     0% {
         opacity: 0;
@@ -77,20 +80,18 @@ header h1 {
     }
 }
 
-/* Animación que se ejecuta al hacer clic en la imagen */
 @keyframes clickEffect {
     0% {
         transform: scale(1) rotate(0deg);
     }
     50% {
-        transform: scale(1.2) rotate(10deg); /* Crece y gira un poco */
+        transform: scale(1.2) rotate(10deg);
     }
     100% {
-        transform: scale(1) rotate(0deg); /* Vuelve a su tamaño normal */
+        transform: scale(1) rotate(0deg); 
     }
 }
 
-/* Aplica la animación al hacer clic */
 #container2 img:active, #container3 img:active {
-    animation: clickEffect 0.3s; /* Duración de la animación de clic */
+    animation: clickEffect 0.3s;
 }
