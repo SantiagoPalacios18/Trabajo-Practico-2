@@ -4,14 +4,33 @@
 
 }
 
-#container2{
-    margin: 20px;
-    padding: 20px;
+#container2 img{
+    margin: 60px;
+    padding: 50px;
     display: flex;
     justify-content: space-around;
 }
 
 .img1{
-    height: 100px;
-    width: 100px;
+    height: 500px;
+    width: 500px;
+}
+
+.text{
+    text-align: center;
+    font-size: 30px;
+}
+
+#imagen1{
+    border: solid 4px black;
+    background-color: brown;
+
+}
+
+#container3 img{
+    margin: 60px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+
 }
