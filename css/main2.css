@@ -1,40 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
 }
+
 body {
     overflow-x: hidden;
-  }
-  
+}
 
-#container2 img{
+#container2 img, #container3 img {
     margin: 60px;
     padding: 50px;
     display: flex;
     justify-content: space-around;
+    opacity: 0;
+    animation: bounceIn 1s forwards; /* Animación de rebote al cargar */
+    transition: transform 0.5s ease-in-out;
 }
 
-.img1{
+
+.img1 {
     height: 500px;
     width: 500px;
 }
 
-.text{
+.text {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
+    opacity: 0;
+    transform: translateY(30px); /* Empieza desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-#imagen1{
+#imagen1 {
     border: solid 4px black;
     background-color: brown;
-
 }
 
-#container3 img{
-    margin: 60px;
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
+/* Efecto de zoom y rotación cuando se pasa el ratón sobre la imagen */
+#container2 img:hover, #container3 img:hover {
+    transform: scale(1.1) rotate(5deg); /* Zoom y rotación */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
 
+/* El texto sube y aparece cuando el ratón pasa sobre la imagen */
+#container2 img:hover ~ .text, #container3 img:hover ~ .text {
+    opacity: 1;
+    transform: translateY(0); /* Se coloca en su posición original */
+}
+
+/* Animación de rebote al cargar las imágenes */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(-50px);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Animación que se ejecuta al hacer clic en la imagen */
+@keyframes clickEffect {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(10deg); /* Crece y gira un poco */
+    }
+    100% {
+        transform: scale(1) rotate(0deg); /* Vuelve a su tamaño normal */
+    }
+}
+
+/* Aplica la animación al hacer clic */
+#container2 img:active, #container3 img:active {
+    animation: clickEffect 0.3s; /* Duración de la animación de clic */
 }
