@@ -14,7 +14,7 @@
 body{
     font-family: rocketLeague;
     overflow-x: hidden;
-    background-color: #035AA6;
+    background-color: #F2F2F2;
 }
 
 #index__header1{
@@ -284,6 +284,91 @@ footer{
     text-align: center;
     color: #F2F2F2;
 }
+
+/*Galeria inicio*/
+
+#titulo{
+    margin-left: 30px;
+}
+
+#container2 img, #container3 img {
+    margin: 60px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    animation: bounceIn 1s forwards;
+    transition: transform 0.5s ease-in-out;
+}
+
+#conjuntoImagenes div div p{
+    position: absolute;
+    display: none;
+    font-size: 30px;
+    color: #CCF6FF;
+    width: 25%;
+    text-align: center;
+}
+.img1 {
+    height: 500px;
+    width: 500px;
+}
+
+.text {
+    text-align: center;
+    font-size: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#imagen1 {
+    border: solid 4px black;
+    background-image: linear-gradient(to right, #049DD9, #E06615);
+}
+
+
+#container2 img:hover, #container3 img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+#container2 img:hover ~ .text, #container3 img:hover ~ .text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(-50px);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(10deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg); 
+    }
+}
+
+#container2 img:active, #container3 img:active {
+    animation: clickEffect 0.3s;
+}
+
+/*Galeria final*/
 
 @media screen and (min-width: 320px) and (max-width: 767px){
     #index__header1{
