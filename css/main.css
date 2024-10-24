@@ -56,7 +56,7 @@ body{
 
 #index__menu a{
     width: 20%;
-    background-color: #E06615;
+    background-image: linear-gradient(to bottom, #E06615, #f78032);
     text-align: center;
     color: white;
     text-decoration: none;
@@ -83,7 +83,7 @@ body{
 }
 
 #index__animacion{
-    background-color: #035AA6;
+    background-image: linear-gradient(to bottom, #035AA6, #049DD9);
     margin-top: 45px;
     margin-bottom: 45px;
     padding: 30px 0px 30px 0px;
@@ -115,7 +115,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 45px;
-    background-color: #035AA6;
+    background-image: linear-gradient(to right, #035AA6, #049DD9);
     border-top: solid 5px #0D0D0D;
     border-bottom: solid 5px #0D0D0D;
 }
@@ -142,6 +142,8 @@ body{
 #index__inicio img{
     border-radius: 20px;
     width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #index__subtitulo{
@@ -169,7 +171,7 @@ body{
     padding: 10px;
     text-align: left;
     margin-left: 20%;
-    background-color: #E06615;
+    background-image: linear-gradient(to left, #E06615, #f78032);
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border: solid 2px #0D0D0D;
@@ -207,7 +209,7 @@ body{
 }
 
 .items img:hover ~ p{
-    background-color: #F2F2F2;
+    background-color: #049DD9;
     transform: scale(1.1, 1.1);
 }
 
@@ -285,7 +287,7 @@ footer{
     color: #F2F2F2;
 }
 
-/*Galeria inicio*/
+/*----------------Galeria inicio----------------*/
 
 #titulo{
     margin-left: 30px;
